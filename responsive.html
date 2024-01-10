@@ -14,6 +14,31 @@
         .imageContainer{
             display: flex;
         }
+
+        .imageContainer div{
+            width: 50%;
+        }
+
+        .imageContainer img{
+            width: 100%;
+        }
+
+        .firstImage{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Making responsive for smaller devices */
+        @media screen and (max-width: 576px) {
+            .imageContainer{
+                flex-direction: column-reverse;
+            }
+
+            .imageContainer div{
+                width: 100%;
+            }
+        }
     </style>
 </head>
 <body>
@@ -23,15 +48,15 @@
             <li>Viewport meta tag</li>
             <li>CSS relative units</li>
             <li>Body: Max Width and Horizontal Align: Center</li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>Making image fluid</li>
+            <li>Two columns: Use flex and media query with flex direction column</li>
+            <li>Multi column: Use grid layout</li>
+            <li>Responsive menu: Javascript will be needed</li>
         </ol>
     </header>
     <main>
         <div class="imageContainer">
-            <div>
+            <div class="firstImage">
                 <img src="https://www.nhlbi.nih.gov/sites/default/files/styles/16x9_crop/public/2020-07/Heart%20healthy%20foods%20-%20shutterstock_624180923.jpg?h=4677f108&itok=JcbD1R5M" alt="">
             </div>
             <div>
