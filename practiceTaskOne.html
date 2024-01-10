@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Boxes</title>
+    <style>
+        /* body{
+            max-width: 1440px;
+            max-height: 1440px;
+            border: 2px solid peru;
+        } */
+
+        .container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 200px auto;
+        }
+
+        .container h1{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* border: 2px solid plum; */
+            padding: 100px;
+            /* width: 30%; */
+            /* height: 100%; */
+        }
+
+        .firstBox{
+            background-color: lightgray;
+            width: 15%;
+            /* height: 100%; */
+        }
+
+        /* .firstBox h1{
+            width: 0%;
+        } */
+
+        .secondBox{
+            background-color: lightyellow;
+            width: 50%;
+            /* height: 100%; */
+        }
+
+        /* Making Responsive for mobile devices */
+        @media screen and (max-width: 576px) {
+            .container{
+                flex-direction: column;
+            }
+
+            .firstBox, .secondBox{
+                width: 100%;
+            }
+
+            /* .container h1{
+                padding: 0;
+            } */
+
+            .firstBox > h1{
+                padding: 0;
+            }
+
+            .secondBox > h1{
+                padding: 100px;
+            }
+
+            /* .firstBox{
+                height: 30%;
+            }
+
+            .secondBox{
+                height: 70%;
+            } */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="firstBox">
+            <h1>Left</h1>
+        </div>
+        <div class="secondBox">
+            <h1>Right</h1>
+        </div>
+    </div>
+</body>
+</html>
