@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Query</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+
+        .food{
+            border: 2px solid tomato;
+            padding: 10px;
+            border-radius: 10px;
+        }
+
+        .food img{
+            width: 100%;
+        }
+
+        /* Smaller Device */
+
+        @media screen and (max-width: 576px){
+            .container{
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            .food{
+                background-color: aquamarine;
+            }
+        }
+
+        /* Medium Device */
+        @media screen and (min-width: 576px) and (max-width: 992px){
+            .container{
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="food">
+            <img src="https://www.nhlbi.nih.gov/sites/default/files/styles/16x9_crop/public/2020-07/Heart%20healthy%20foods%20-%20shutterstock_624180923.jpg?h=4677f108&itok=JcbD1R5M" alt="">
+            <h3>Food Item - 1</h3>
+            <p>Price: $100</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas officiis reprehenderit eveniet amet ipsam quae quasi earum culpa assumenda deleniti!</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="https://www.nhlbi.nih.gov/sites/default/files/styles/16x9_crop/public/2020-07/Heart%20healthy%20foods%20-%20shutterstock_624180923.jpg?h=4677f108&itok=JcbD1R5M" alt="">
+            <h3>Food Item - 2</h3>
+            <p>Price: $200</p>
+            <p>Molestiae modi, odit pariatur alias, quam voluptatum voluptatem aspernatur aperiam laudantium maxime facilis tempora ex mollitia vel? Deserunt, ut libero.</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="https://www.nhlbi.nih.gov/sites/default/files/styles/16x9_crop/public/2020-07/Heart%20healthy%20foods%20-%20shutterstock_624180923.jpg?h=4677f108&itok=JcbD1R5M" alt="">
+            <h3>Food Item - 3</h3>
+            <p>Price: $300</p>
+            <p>Culpa saepe voluptates blanditiis hic consequatur fuga. Consequuntur, minima delectus. Dignissimos, quidem? Odio eaque reiciendis maxime distinctio perferendis sint obcaecati!</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="https://www.nhlbi.nih.gov/sites/default/files/styles/16x9_crop/public/2020-07/Heart%20healthy%20foods%20-%20shutterstock_624180923.jpg?h=4677f108&itok=JcbD1R5M" alt="">
+            <h3>Food Item - 4</h3>
+            <p>Price: $400</p>
+            <p>Hic facere non accusamus, molestiae voluptatibus temporibus nostrum est perferendis impedit ipsam ut obcaecati voluptatem a veniam corporis assumenda dolor.</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="https://www.nhlbi.nih.gov/sites/default/files/styles/16x9_crop/public/2020-07/Heart%20healthy%20foods%20-%20shutterstock_624180923.jpg?h=4677f108&itok=JcbD1R5M" alt="">
+            <h3>Food Item - 5</h3>
+            <p>Price: $500</p>
+            <p>Consectetur id dolorum ab libero eaque numquam harum aut voluptatibus culpa quos reiciendis neque, maxime corrupti dignissimos veritatis natus velit!</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="https://www.nhlbi.nih.gov/sites/default/files/styles/16x9_crop/public/2020-07/Heart%20healthy%20foods%20-%20shutterstock_624180923.jpg?h=4677f108&itok=JcbD1R5M" alt="">
+            <h3>Food Item - 6</h3>
+            <p>Price: $600</p>
+            <p>Suscipit, ratione! Praesentium similique deleniti eum quis illo obcaecati corporis fugiat? Quam recusandae tenetur, molestiae numquam accusantium vero porro maiores.</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="https://www.nhlbi.nih.gov/sites/default/files/styles/16x9_crop/public/2020-07/Heart%20healthy%20foods%20-%20shutterstock_624180923.jpg?h=4677f108&itok=JcbD1R5M" alt="">
+            <h3>Food Item - 7</h3>
+            <p>Price: $700</p>
+            <p>Reprehenderit, earum assumenda! Ducimus voluptatem, dolore amet quam accusantium aliquam suscipit optio maiores, nulla eius reprehenderit excepturi soluta impedit perferendis?</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="https://www.nhlbi.nih.gov/sites/default/files/styles/16x9_crop/public/2020-07/Heart%20healthy%20foods%20-%20shutterstock_624180923.jpg?h=4677f108&itok=JcbD1R5M" alt="">
+            <h3>Food Item - 8</h3>
+            <p>Price: $800</p>
+            <p>Id dicta quibusdam sed vitae veniam illo quidem quia impedit quod, accusantium atque dolor nisi, consequuntur consectetur, delectus sapiente eligendi.</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="https://www.nhlbi.nih.gov/sites/default/files/styles/16x9_crop/public/2020-07/Heart%20healthy%20foods%20-%20shutterstock_624180923.jpg?h=4677f108&itok=JcbD1R5M" alt="">
+            <h3>Food Item - 9</h3>
+            <p>Price: $900</p>
+            <p>Mollitia tenetur omnis sint modi. Dicta, veritatis numquam. Aliquam tempore doloribus dolore facere quasi, magni recusandae veritatis optio nostrum pariatur?</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="https://www.nhlbi.nih.gov/sites/default/files/styles/16x9_crop/public/2020-07/Heart%20healthy%20foods%20-%20shutterstock_624180923.jpg?h=4677f108&itok=JcbD1R5M" alt="">
+            <h3>Food Item - 10</h3>
+            <p>Price: $1000</p>
+            <p>Optio cum iusto cumque illum dignissimos excepturi repellendus soluta eaque rem corrupti reiciendis corporis non, nemo amet blanditiis quia exercitationem.</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="https://www.nhlbi.nih.gov/sites/default/files/styles/16x9_crop/public/2020-07/Heart%20healthy%20foods%20-%20shutterstock_624180923.jpg?h=4677f108&itok=JcbD1R5M" alt="">
+            <h3>Food Item - 11</h3>
+            <p>Price: $1100</p>
+            <p>Soluta alias vitae odio unde obcaecati nemo tenetur optio dolore saepe pariatur laborum adipisci earum, natus quisquam cum asperiores atque!</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="https://www.nhlbi.nih.gov/sites/default/files/styles/16x9_crop/public/2020-07/Heart%20healthy%20foods%20-%20shutterstock_624180923.jpg?h=4677f108&itok=JcbD1R5M" alt="">
+            <h3>Food Item - 12</h3>
+            <p>Price: $1200</p>
+            <p>Maiores, ab dolor quia possimus neque hic veritatis, ipsum, autem ea quis magni distinctio. Ullam voluptas repudiandae sit error voluptatum!</p>
+            <button>Buy Now</button>
+        </div>
+    </div>
+</body>
+</html>
